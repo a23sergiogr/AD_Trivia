@@ -1,0 +1,14 @@
+{
+  "tipoPregunta": "MULTIPLE",
+  "dificultad": "EASY",
+  "categoria": {
+    "nombre": ""
+  },
+  "pregunta": "Cual es la capital de españa\u003d",
+  "correcta": "Madrid",
+  "incorrectas": [
+    "Sevilla",
+    "Valencia",
+    "Santiago"
+  ]
+}

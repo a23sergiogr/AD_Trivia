@@ -1,0 +1,12 @@
+{
+  "type": "multiple",
+  "difficulty": "easy",
+  "category": "geografía",
+  "question": "Cual es la capital de españa:",
+  "correct_answer": "Madrid",
+  "incorrect_answers": [
+    "Sevilla",
+    "Valencia",
+    "Barcelona"
+  ]
+}
