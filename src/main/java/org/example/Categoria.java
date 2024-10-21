@@ -2,8 +2,13 @@ package org.example;
 
 import java.util.Objects;
 
-public class Categoria {
+public final class Categoria {
+    public static final String DEFAULT = "General knowledge";
     public final String nombre;
+
+    public Categoria() {
+        nombre = DEFAULT;
+    }
 
     public Categoria(String nombre) {
         this.nombre = nombre;
@@ -28,9 +33,9 @@ public class Categoria {
 
     @Override
     public String toString() {
-        return "Categoria{" +
-                "nombre='" + nombre + '\'' +
-                '}';
+        final StringBuilder sb = new StringBuilder("Categoria: ");
+        sb.append(nombre).append("\n");
+        return sb.toString();
     }
 }
 
