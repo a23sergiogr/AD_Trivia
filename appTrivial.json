@@ -1,0 +1,38 @@
+{
+  "preguntas": [
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "geografía",
+      "question": "Cual es la capital de españa?",
+      "correct_answer": "Madrid",
+      "incorrect_answers": [
+        "Sevilla",
+        "Valencia",
+        "Barcelona"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Programación",
+      "question": "¿Cuál de los siguientes lenguajes de programación es orientado a objetos puro?",
+      "correct_answer": [
+        "Java",
+        "Python",
+        "Modula-2"
+      ],
+      "incorrect_answers": "C"
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "Programación",
+      "question": "¿Java es un lenguaje de programación orientado a objetos?",
+      "correct_answer": true,
+      "incorrect_answers": [
+        false
+      ]
+    }
+  ]
+}

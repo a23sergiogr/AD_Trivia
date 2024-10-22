@@ -62,9 +62,9 @@ public class PreguntaMultiple extends Pregunta implements Predicate<Integer> {
     public String toString() {
         final StringBuilder sb = new StringBuilder();
         sb.append(super.toString());
-        sb.append("tipoPregunta: Múltiple").append("\n");
+        sb.append("tipoPregunta: Múltiple");
         for (Opcion opcion : opcionList)
-            sb.append("\t").append(opcion);
+            sb.append(opcion);
         return sb.toString();
     }
 }

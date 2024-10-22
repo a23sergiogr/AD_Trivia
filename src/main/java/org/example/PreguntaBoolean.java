@@ -17,6 +17,15 @@ public class PreguntaBoolean extends Pregunta implements Predicate<Boolean> {
         this.respuesta = respuesta;
     }
 
+    public boolean isRespuesta() {
+        return respuesta;
+    }
+
+    public PreguntaBoolean setRespuesta(boolean respuesta) {
+        this.respuesta = respuesta;
+        return this;
+    }
+
     @Override
     public boolean test(Boolean aBoolean) {
         return false;

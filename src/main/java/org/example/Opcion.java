@@ -36,7 +36,7 @@ public final class Opcion {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
-        sb.append(enunciado).append("\n");
+        sb.append("\n").append("\t").append(enunciado);
         if(isCorrecta())
             sb.append("\t[*]");
         return sb.toString();
