@@ -1,12 +1,10 @@
 package org.example;
 
 import com.google.gson.*;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
 
 import java.io.IOException;
-import java.lang.reflect.Type;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 public class Main {
@@ -30,8 +28,11 @@ public class Main {
         return jsonArray;
     }
 
+
+
+
     public static void main(String[] args) {
-        Gson gson = new GsonBuilder()
+        Gson gsonSerializer = new GsonBuilder()
                 .setPrettyPrinting()
                 .registerTypeAdapter(PreguntaBoolean.class, (JsonSerializer<PreguntaBoolean>) (preguntaBoolean, type, jsonSerializationContext) -> {
                     JsonObject jsonObject = getJsonObject(preguntaBoolean);
@@ -82,11 +83,106 @@ public class Main {
                             .setDificultad(Dificultad.valueOf(jsonObject.get("difficulty").getAsString().toUpperCase()));
 
                     JsonArray jsonArray = jsonObject.get("incorrect_answers").getAsJsonArray();
-                    for (JsonElement element : jsonArray){
+                    for (JsonElement element : jsonArray) {
                         preguntaMultiple.addOpcion(new Opcion(element.getAsString()));
                     }
 
                     return preguntaMultiple;
+                })
+                .create();
+
+
+
+        Gson gsonTypeAdapter = new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(PreguntaMultiple.class, new TypeAdapter<PreguntaMultiple>() {
+                    @Override
+                    public void write(JsonWriter jsonWriter, PreguntaMultiple pregunta) throws IOException {
+                        jsonWriter.beginObject();
+                        jsonWriter.name("type").value(pregunta.getTipoPregunta().getTipoPregunta());
+                        jsonWriter.name("difficulty").value(pregunta.getDificultad().getDificultad());
+                        jsonWriter.name("category").value(pregunta.getCategoria().getNombre());
+                        jsonWriter.name("question").value(pregunta.getPregunta());
+                        List<Opcion> opcionList = pregunta.getOpcionList();
+                        for (Opcion opcion : opcionList) {
+                            if (opcion.isCorrecta()) {
+                                jsonWriter.name("correct_answer").value(opcion.getEnunciado());
+                            }
+                        }
+                        jsonWriter.name("incorrect_answers");
+                        jsonWriter.beginArray();
+                        for (Opcion opcion : opcionList) {
+                            if (!opcion.isCorrecta()) {
+                                jsonWriter.value(opcion.getEnunciado());
+                            }
+                        }
+                        jsonWriter.endArray();
+                        jsonWriter.endObject();
+                    }
+
+                    @Override
+                    public PreguntaMultiple read(JsonReader jsonReader) throws IOException {
+                        PreguntaMultiple pregunta = new PreguntaMultiple();
+                        jsonReader.beginObject();
+                        while (jsonReader.hasNext()) {
+                            String name = jsonReader.nextName();
+                            switch (name) {
+                                case "type" -> pregunta.setTipoPregunta(TipoPregunta.valueOf(jsonReader.nextString().toUpperCase()));
+                                case "difficulty" -> pregunta.setDificultad(Dificultad.valueOf(jsonReader.nextString().toUpperCase()));
+                                case "category" -> pregunta.setCategoria(new Categoria(jsonReader.nextString()));
+                                case "question" -> pregunta.setPregunta(jsonReader.nextString());
+                                case "correct_answer" -> pregunta.addOpcion(new Opcion(jsonReader.nextString(), true));
+                                case "incorrect_answers" -> {
+                                    jsonReader.beginArray();
+                                    while (jsonReader.hasNext()) {
+                                        pregunta.addOpcion(new Opcion(jsonReader.nextString()));
+                                    }
+                                    jsonReader.endArray();
+                                }
+                                default -> {}
+                            }
+                        }
+                        jsonReader.endObject();
+                        return pregunta;
+                    }
+                })
+                .registerTypeAdapter(PreguntaBoolean.class, new TypeAdapter<PreguntaBoolean>() {
+                    @Override
+                    public void write(JsonWriter jsonWriter, PreguntaBoolean pregunta) throws IOException {
+                        jsonWriter.beginObject();
+                        jsonWriter.name("type").value(pregunta.getTipoPregunta().getTipoPregunta());
+                        jsonWriter.name("difficulty").value(pregunta.getDificultad().getDificultad());
+                        jsonWriter.name("category").value(pregunta.getCategoria().getNombre());
+                        jsonWriter.name("question").value(pregunta.getPregunta());
+                        jsonWriter.name("correct_answer").value(pregunta.isRespuesta());
+                        jsonWriter.name("incorrect_answers");
+                        jsonWriter.beginArray();
+                        jsonWriter.value(!pregunta.isRespuesta());
+                        jsonWriter.endArray();
+                        jsonWriter.endObject();
+                    }
+
+                    @Override
+                    public PreguntaBoolean read(JsonReader jsonReader) throws IOException {
+                        PreguntaBoolean pregunta = new PreguntaBoolean();
+                        jsonReader.beginObject();
+                        while (jsonReader.hasNext()) {
+                            String name = jsonReader.nextName();
+                            switch (name) {
+                                case "type" -> pregunta.setTipoPregunta(TipoPregunta.valueOf(jsonReader.nextString().toUpperCase()));
+                                case "difficulty" -> pregunta.setDificultad(Dificultad.valueOf(jsonReader.nextString().toUpperCase()));
+                                case "category" -> pregunta.setCategoria(new Categoria(jsonReader.nextString()));
+                                case "question" -> pregunta.setPregunta(jsonReader.nextString());
+                                case "correct_answer" -> pregunta.setRespuesta(jsonReader.nextBoolean());
+                                case "incorrect_answers" -> {
+                                    jsonReader.skipValue();
+                                }
+                                default -> {}
+                            }
+                        }
+                        jsonReader.endObject();
+                        return pregunta;
+                    }
                 })
                 .serializeNulls()
                 .create();
@@ -118,31 +214,55 @@ public class Main {
         appTrivial.addPregunta(preguntaMultiple);
         appTrivial.addPregunta(preguntaBoolean);
 
+        Gson gson = gsonTypeAdapter;
+
 //        System.out.println("appTrivial = " + appTrivial);
 
 //        String json = gson.toJson(appTrivial);
 //        System.out.println(json);
 //        System.out.println(gson.fromJson(json, AppTrivial.class));
 
-//        String json = gson.toJson(preguntaBoolean);
-//        System.out.println(json);
-//        System.out.println(gson.fromJson(json, PreguntaBoolean.class));
-
-        String json = gson.toJson(preguntaMultiple);
+        String json = gson.toJson(preguntaBoolean);
         System.out.println(json);
-        String prueba = "{\n" +
-                "      \"type\": \"multiple\",\n" +
-                "      \"difficulty\": \"medium\",\n" +
-                "      \"category\": \"Entertainment: Music\",\n" +
-                "      \"question\": \"Which member of the British pop group &quot;The Spice Girls&quot; was known as Ginger Spice?\",\n" +
-                "      \"correct_answer\": \"Geri Halliwell\",\n" +
-                "      \"incorrect_answers\": [\n" +
-                "        \"Melanie Brown\",\n" +
-                "        \"Emma Bunton\",\n" +
-                "        \"Victoria Beckham\"\n" +
-                "      ]\n" +
-                "    }";
-        System.out.println(gson.fromJson(prueba, PreguntaMultiple.class));
+        System.out.println(gson.fromJson(json, PreguntaBoolean.class));
+
+//        String json = gson.toJson(preguntaMultiple);
+//        System.out.println(json);
+//        System.out.println(gson.fromJson(json, PreguntaMultiple.class));
+//        String prueba = "{\n" +
+//                "      \"type\": \"multiple\",\n" +
+//                "      \"difficulty\": \"medium\",\n" +
+//                "      \"category\": \"Entertainment: Music\",\n" +
+//                "      \"question\": \"Which member of the British pop group &quot;The Spice Girls&quot; was known as Ginger Spice?\",\n" +
+//                "      \"correct_answer\": \"Geri Halliwell\",\n" +
+//                "      \"incorrect_answers\": [\n" +
+//                "        \"Melanie Brown\",\n" +
+//                "        \"Emma Bunton\",\n" +
+//                "        \"Victoria Beckham\"\n" +
+//                "      ]\n" +
+//                "    }";
+//        System.out.println(gson.fromJson(prueba, PreguntaMultiple.class));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //        Path path = Paths.get("appTrivial.json");
 //        try(var bw = Files.newBufferedWriter(path)){

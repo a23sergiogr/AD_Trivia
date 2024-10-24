@@ -85,11 +85,11 @@ public class Pregunta implements Serializable, Comparable<Pregunta> {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
-        sb.append("idPregunta: ").append(idPregunta).append("\n");
+        sb.append("\n\nidPregunta: ").append(idPregunta).append("\n");
         sb.append("pregunta: ").append(pregunta).append("\n");
         sb.append("tipoPregunta: ").append(tipoPregunta).append("\n");
         sb.append("dificultad: ").append(dificultad).append("\n");
-        sb.append("categoria: ");
+        sb.append("categoria: ").append(categoria).append("\n");
         return sb.toString();
     }
 }

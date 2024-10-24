@@ -35,7 +35,6 @@ public class PreguntaBoolean extends Pregunta implements Predicate<Boolean> {
     public String toString() {
         final StringBuilder sb = new StringBuilder();
         sb.append(super.toString());
-        sb.append("tipoPregunta: Verdadero/Falso").append("\n");
         sb.append("\t").append(respuesta).append("\n");
         return sb.toString();
     }

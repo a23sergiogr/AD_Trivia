@@ -33,8 +33,8 @@ public final class Categoria {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Categoria: ");
-        sb.append(nombre).append("\n");
+        final StringBuilder sb = new StringBuilder();
+        sb.append(nombre);
         return sb.toString();
     }
 }
