@@ -28,7 +28,7 @@ public class PreguntaBoolean extends Pregunta implements Predicate<Boolean> {
 
     @Override
     public boolean test(Boolean aBoolean) {
-        return false;
+        return aBoolean == respuesta;
     }
 
     @Override

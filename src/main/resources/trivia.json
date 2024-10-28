@@ -1,0 +1,591 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "One of the early prototypes of the Sega Dreamcast controller resembled which of the following?",
+      "correct_answer": "Television Remote",
+      "incorrect_answers": [
+        "Tablet",
+        "Hairdryer",
+        "Flip Phone"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Television",
+      "question": "What was the UK &quot;Who Wants to be a Millionaire?&quot; cheating scandal known as?",
+      "correct_answer": "Major Fraud",
+      "incorrect_answers": [
+        "Ingram Cheater",
+        "Coughing Major",
+        "Millionaire Crime"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science: Computers",
+      "question": "All of the following programs are classified as raster graphics editors EXCEPT:",
+      "correct_answer": "Inkscape",
+      "incorrect_answers": [
+        "Paint.NET",
+        "GIMP",
+        "Adobe Photoshop"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Vehicles",
+      "question": "Which of the following car manufacturers had a war named after it?",
+      "correct_answer": "Toyota",
+      "incorrect_answers": [
+        "Honda",
+        "Ford",
+        "Volkswagen"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Board Games",
+      "question": "How many dice are used in the game of Yahtzee?",
+      "correct_answer": "Five",
+      "incorrect_answers": [
+        "Four",
+        "Six",
+        "Eight"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which of the following is NOT a capital city?",
+      "correct_answer": "Sydney",
+      "incorrect_answers": [
+        "Cairo",
+        "Moscow",
+        "Beijing"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science &amp; Nature",
+      "question": "Coulrophobia is the irrational fear of what?",
+      "correct_answer": "Clowns",
+      "incorrect_answers": [
+        "Cemeteries",
+        "Needles",
+        "Tunnels"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "Politics",
+      "question": "The 2016 United States Presidential Election is the first time Hillary Clinton has run for President.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Music",
+      "question": "Which Disney character sings the song &quot;A Dream is a Wish Your Heart Makes&quot;?",
+      "correct_answer": "Cinderella",
+      "incorrect_answers": [
+        "Belle",
+        "Snow White",
+        "Pocahontas"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Music",
+      "question": "How many studio albums have the duo Daft Punk released?",
+      "correct_answer": "4",
+      "incorrect_answers": [
+        "1",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Virtual reality company Oculus VR lost which of it&#039;s co-founders in a freak car accident in 2013?",
+      "correct_answer": "Andrew Scott Reisse",
+      "incorrect_answers": [
+        "Nate Mitchell",
+        "Jack McCauley",
+        "Palmer Luckey"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "On the 6th of June 2006, what was the name of the infamous glitch that occurred in the MMO RuneScape?",
+      "correct_answer": "The Falador Massacre",
+      "incorrect_answers": [
+        "Noclip glitch",
+        "Party-hat Duplication Glitch",
+        "TzHaar Massacre"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "What year was Super Mario Bros. released?",
+      "correct_answer": "1985",
+      "incorrect_answers": [
+        "1983",
+        "1987",
+        "1986"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What was the first ever London Underground line to be built?",
+      "correct_answer": "Metropolitan Line",
+      "incorrect_answers": [
+        "Circle Line",
+        "Bakerloo Line",
+        "Victoria Line"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these game franchises were made by Namco?",
+      "correct_answer": "Tekken",
+      "incorrect_answers": [
+        "Street Fighter",
+        "Mortal Kombat",
+        "Dragon Quest"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "On a London Underground map, what colour is the Circle Line?",
+      "correct_answer": "Yellow",
+      "incorrect_answers": [
+        "Red",
+        "Blue",
+        "Green"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "What is the French word for &quot;fish&quot;?",
+      "correct_answer": "poisson",
+      "incorrect_answers": [
+        "fiche",
+        "escargot",
+        "mer"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Who is the main character in the video game &quot;Just Cause 3&quot;?",
+      "correct_answer": "Rico Rodriguez",
+      "incorrect_answers": [
+        "Tom Sheldon",
+        "Marcus Holloway",
+        "Mario Frigo"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "Which JoJo&#039;s Bizarre Adventure character possesses the Stand named Silver Chariot?",
+      "correct_answer": "Jean Pierre Polnareff",
+      "incorrect_answers": [
+        "Noriaki Kakyoin",
+        "Hol Horse",
+        "Hermes Costello"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the &quot;Portal&quot; series, who was Cave Johnson&#039;s personal assistant?",
+      "correct_answer": "Caroline",
+      "incorrect_answers": [
+        "Heather",
+        "Melissa",
+        "Jane"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question": "What is the oldest US state?",
+      "correct_answer": "Delaware",
+      "incorrect_answers": [
+        "Rhode Island",
+        "Maine",
+        "Virginia"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "David Baszucki was a co-founder of ROBLOX Corporation.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "The Fiat Multipla is a drivable car in &quot;Forza Horizon 3&quot;.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "George W. Bush lost the popular vote in the 2004 United States presidential election.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "History",
+      "question": "Adolf Hitler was a german soldier in World War I.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science &amp; Nature",
+      "question": "In the Scoville scale, what is the hottest chemical?",
+      "correct_answer": "Resiniferatoxin",
+      "incorrect_answers": [
+        "Capsaicin",
+        "Dihydrocapsaicin",
+        "Tinyatoxin"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
+      "correct_answer": "DING Ning (China)",
+      "incorrect_answers": [
+        "LI Xiaoxia (China)",
+        "Ai FUKUHARA (Japan)",
+        "Song KIM (North Korea)"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In Pokemon Diamond, Pearl and Platinum, where can a Munchlax be found?",
+      "correct_answer": "Honey Trees",
+      "incorrect_answers": [
+        "Trading with an NPC",
+        "Grass on Route 209",
+        "Wayward Cave"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Board Games",
+      "question": "The Dice Tower network of board game podcasts and videos is run by which individual?",
+      "correct_answer": "Tom Vasel",
+      "incorrect_answers": [
+        "Jason LeVine",
+        "Borth Sampson",
+        "Uncle Pennybags"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the Half-Life universe, the Black Mesa Research Facility is located in which US state?",
+      "correct_answer": "New Mexico",
+      "incorrect_answers": [
+        "Nevada",
+        "Arizona",
+        "Wyoming"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science: Computers",
+      "question": "What does LTS stand for in the software market?",
+      "correct_answer": "Long Term Support",
+      "incorrect_answers": [
+        "Long Taco Service",
+        "Ludicrous Transfer Speed",
+        "Ludicrous Turbo Speed"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Which one of these is not a typical European sword design?",
+      "correct_answer": "Scimitar",
+      "incorrect_answers": [
+        "Falchion",
+        "Ulfberht",
+        "Flamberge"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In what year was the game &quot;FTL: Faster Than Light&quot; released?",
+      "correct_answer": "2012",
+      "incorrect_answers": [
+        "2014",
+        "2013",
+        "2011"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science: Gadgets",
+      "question": "Which company developed the Hololens?",
+      "correct_answer": "Microsoft",
+      "incorrect_answers": [
+        "HTC",
+        "Oculus",
+        "Tobii"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Music",
+      "question": "How many members are there in the band Nirvana?",
+      "correct_answer": "Three",
+      "incorrect_answers": [
+        "Two",
+        "Four",
+        "Five"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Music",
+      "question": "The song &quot;Caramelldansen&quot; is commonly mistaken as a Japanese song, what language is the song actually sung in?",
+      "correct_answer": "Swedish",
+      "incorrect_answers": [
+        "Hungarian",
+        "Finnish",
+        "Chinese"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Mythology",
+      "question": "In most traditions, who was the wife of Zeus?",
+      "correct_answer": "Hera",
+      "incorrect_answers": [
+        "Aphrodite",
+        "Athena",
+        "Hestia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Which of these is NOT an Australian state or territory?",
+      "correct_answer": "Alberta",
+      "incorrect_answers": [
+        "New South Wales",
+        "Victoria",
+        "Queensland"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "Science: Gadgets",
+      "question": "The communication protocol NFC stands for Near-Field Control.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Which US state has the highest population?",
+      "correct_answer": "California",
+      "incorrect_answers": [
+        "New York",
+        "Texas",
+        "Florida"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Music",
+      "question": "What song originally performed by The Bee Gees in 1978 had a cover version by Steps 20 years later?",
+      "correct_answer": "Tragedy",
+      "incorrect_answers": [
+        "Night Fever",
+        "Stayin&#039; Alive",
+        "You Should Be Dancing"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Film",
+      "question": "In the movie &quot;Blade Runner&quot;, what is the term used for human-like androids ?",
+      "correct_answer": "Replicants",
+      "incorrect_answers": [
+        "Cylons",
+        "Synthetics",
+        "Skinjobs"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;Call Of Duty: Zombies&quot;, what is the name of the Pack-A-Punched Crossbow?",
+      "correct_answer": "Awful Lawton",
+      "incorrect_answers": [
+        "Longinus",
+        "V-R11",
+        "Predator"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science &amp; Nature",
+      "question": "What is the &quot;powerhouse&quot; of the Eukaryotic animal cell?",
+      "correct_answer": "Mitochondria",
+      "incorrect_answers": [
+        "Nucleus",
+        "Chloroplast",
+        "Endoplasmic Reticulum"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "General Knowledge",
+      "question": "An eggplant is a vegetable.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question": "What was the original name of New York City?",
+      "correct_answer": "New Amsterdam",
+      "incorrect_answers": [
+        "New London",
+        "New Paris",
+        "New Rome"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Music",
+      "question": "EDM producer Marshmello performs live wearing clothes and a marshmallow mask of what colour?",
+      "correct_answer": "White",
+      "incorrect_answers": [
+        "Black",
+        "Blue",
+        "Yellow"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "In &quot;Battle Cats&quot;, what is Moneko / MISS Moneko&#039;s critical percentage rate?",
+      "correct_answer": "15%",
+      "incorrect_answers": [
+        "20%",
+        "10%",
+        "25%"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question": "Which day did World War I begin?",
+      "correct_answer": "July 28",
+      "incorrect_answers": [
+        "January 28",
+        "June 28",
+        "April 28"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Valve Corporation is an American video game developer located in which city?",
+      "correct_answer": "Bellevue, Washington",
+      "incorrect_answers": [
+        "Austin, Texas",
+        "Seattle, Washington",
+        "San Francisco, California"
+      ]
+    }
+  ]
+}

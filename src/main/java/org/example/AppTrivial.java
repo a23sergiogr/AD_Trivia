@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AppTrivial {
-    List<Pregunta> preguntas;
+    private List<Pregunta> preguntas;
 
     public AppTrivial() {
         preguntas = new ArrayList<>();
@@ -15,6 +15,15 @@ public class AppTrivial {
             preguntas.add(pregunta.setIdPregunta(0));
         else
             preguntas.add(pregunta.setIdPregunta(preguntas.getLast().getIdPregunta() + 1));
+    }
+
+    public List<Pregunta> getPreguntas() {
+        return preguntas;
+    }
+
+    public AppTrivial setPreguntas(List<Pregunta> preguntas) {
+        this.preguntas = preguntas;
+        return this;
     }
 
     @Override
